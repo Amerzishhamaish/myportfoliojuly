@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minimalist Website</title>
+  <link rel="stylesheet" href="web.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#tictactoe" class="nav-link">Tic Tac Toe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="page-section">
+      <!-- Empty Home Section -->
+    </section>
+
+    <section id="portfolio" class="page-section">
+      <div class="profile-card">
+        <img src="your-image.jpg" alt="Profile Picture" class="profile-image" />
+        <h2>Your Name</h2>
+        <p>A brief bio about you. Example: Web developer, designer, or creator.</p>
+      </div>
+    </section>
+
+    <section id="tictactoe" class="page-section">
+      <div class="game">
+        <h2>Tic Tac Toe</h2>
+        <div id="board" class="board"></div>
+        <p id="status"></p>
+        <button onclick="resetGame()">Restart</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="web.js"></script>
+</body>
+</html>
